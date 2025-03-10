@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "PG-Gamer",
+			"path": "../../../../Documents/GitHub/PG-Gamer"
+		},
+		{
+			"name": "HTML",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}
