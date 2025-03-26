@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        let fc = prompt("Celsius Or Fahrenheit");
+        if (fc=='f')
+         {
+        var f = parseFloat(prompt("Enter Fahrenheit Value"));
+        var m = f-32;
+        var n = 5/9 ;
+        var o = m*n;
+        document.write("Your Fahrenheit Value = "+f,"<br>","Your Celcius Value = "+o);
+          }
+          else if (fc=='c')
+          {
+            var c = parseFloat(prompt("Enter Celcius Value "));
+            var m = 9/5 ;
+            var n = c*m;
+            var o = n+32;
+            document.write("Your Fahrenheit Value = "+c,"<br>","Your Celcius Value = "+o);
+          }
+          else 
+          {
+            alert("Enter Only c Or f and Refresh Now")
+          }
+    </script>
+</body>
+</html>

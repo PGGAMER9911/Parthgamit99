@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkle 1.5s infinite;
+        }
+        @keyframes sparkle {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1) translateY(-20px);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translateY(0);
+            }
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #4a90e2;
+            background: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: fadeIn 2s ease-in-out 2s;
+        }
+        .button:hover {
+            background: #f06;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Successfully</h1>
+        <p>Thank you for logging in. Enjoy your stay!</p>
+        <a href="#" class="button">Go to Dashboard</a>
+    </div>
+    <div class="sparkle" style="top: 20%; left: 30%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="top: 40%; left: 50%; animation-delay: 0.5s;"></div>
+    <div class="sparkle" style="top: 60%; left: 70%; animation-delay: 1s;"></div>
+    <div class="sparkle" style="top: 80%; left: 20%; animation-delay: 1.5s;"></div>
+</body>
+</html>
